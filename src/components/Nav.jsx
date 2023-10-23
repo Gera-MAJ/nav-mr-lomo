@@ -1,5 +1,5 @@
 export default function nav(){
-    return(  
+    return(
         <nav className='nav'>
             <ul>
                 <li><a href="#">VENTAS</a></li>

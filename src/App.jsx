@@ -7,15 +7,35 @@ import NavMrLomo from './components/Nav';
 import Display from './components/Display'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const Ventas = {
+    primera: "Nueva Venta",
+    segunda: "Ventas Realizadas"
+  }
+
+  const Facturas = {
+    primera: "Facturas Realizadas",
+    segunda: null
+  }
+
+  const Stock = {
+    primera: "Stock Disponible",
+    segunda: "Aumentar Stock"
+  }
+
+  const Productos = {
+    primera: "Lista de Productos",
+    segunda: "Agregar Producto"
+  }
+
 
   return (
     <>
       <NavMrLomo />
-      <Display primera="Nueva Venta" segunda="Ventas Realizadas"/>
-      <Display primera="Facturas Realizadas" />
-      <Display primera="Stock Disponible" segunda="Aumentar Stock"/>
-      <Display primera="Lista de Productos" segunda="Ingresar Producto"/>
+      <Display Info = {Ventas}/>
+      <Display Info = {Facturas} />
+      <Display Info = {Stock} />
+      <Display Info = {Productos} />
+      
       <img className='logoLomo' src={logomrlomo} alt="logo"/>
        
     </>
