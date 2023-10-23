@@ -18,7 +18,7 @@ body {
   top: 0px;
   left: 0px;
   width: 100%;
-  border: 2px solid black;
+  border: 4px solid black;
   border-radius: 10px;
   margin: 0px 1em 0px 1em;
   background-color: #FFD500;
@@ -41,4 +41,28 @@ body {
 
 .logoLomo {
   margin: auto;
+}
+
+.extVenta,
+.extFacturas,
+.extProductos,
+.extStock {
+  background-color: white;
+  border: 2px solid black;
+}
+
+.extVenta ul li,
+.extProductos ul li,
+.extStock ul li,
+.extFacturas ul li {
+  color: black;
+  list-style: none;
+  text-align: left;
+}
+
+.extVenta ul,
+.extProductos ul,
+.extStock ul,
+.extFacturas ul {
+  padding: 0;
 }

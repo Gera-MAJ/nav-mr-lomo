@@ -19,6 +19,33 @@ function App() {
         </ul>
       </nav>
 
+      <span className='extVenta'>
+        <ul>
+          <li>Nueva Venta</li>
+          <li>Ventas Realizadas</li>
+        </ul>
+      </span>
+
+      <span className='extFacturas'>
+        <ul>
+          <li>Facturas Realizadas</li>
+        </ul>
+      </span>
+
+      <span className='extStock'>
+        <ul>
+          <li>Stock Disponible</li>
+          <li>Aumentar Stock</li>
+        </ul>
+      </span>
+
+      <span className='extProductos'>
+        <ul>
+          <li>Lista de Productos</li>
+          <li>Ingresar Producto</li>
+        </ul>
+      </span>
+
       <img className='logoLomo' src={logomrlomo} alt="logo"/>
       {/* <div>
         <a href="https://vitejs.dev" target="_blank">
