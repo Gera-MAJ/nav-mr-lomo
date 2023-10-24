@@ -1,11 +1,18 @@
+import React from "react"
+
 export default function nav(){
+      
+    function ClickA(item){
+        alert(`Click en ${item}`)
+    }
+
     return(
         <nav className='nav'>
             <ul>
-                <li><a href="#">VENTAS</a></li>
-                <li><a href="#">FACTURAS</a></li>
-                <li><a href="#">STOCK</a></li>
-                <li><a href="#">PRODUCTOS</a></li>
+                <li><a href="#" onClick={()=>{ClickA('ventas')}}>VENTAS</a></li>
+                <li><a href="#" onClick={()=>{ClickA('facturas')}}>FACTURAS</a></li>
+                <li><a href="#" onClick={()=>{ClickA('stock')}}>STOCK</a></li>
+                <li><a href="#" onClick={()=>{ClickA('productos')}}>PRODUCTOS</a></li>
             </ul>
         </nav> 
     )

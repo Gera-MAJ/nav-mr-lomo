@@ -23,6 +23,7 @@ body {
   margin: 0px 1em 0px 1em;
   background-color: #FFD500;
   margin: auto;
+  z-index: 1;
 }
 
 .nav ul {
@@ -31,10 +32,13 @@ body {
 }
 
 .nav ul li {
-  cursor: pointer;
-  margin: 0px 2em 0px 2em;
-  font-size: 1.4em;
   list-style: none;
+}
+
+.nav ul li a {
+  margin: 0px 4rem 0px 4rem;
+  font-size: 1.4em;
+  text-decoration: none;
   color: black;
   font-weight: bold;
 }
@@ -43,26 +47,65 @@ body {
   margin: auto;
 }
 
-.extVenta,
-.extFacturas,
-.extProductos,
-.extStock {
+.DisplayVenta,
+.DisplayProducto,
+.DisplayStock,
+.DisplayFactura {
   background-color: white;
-  border: 2px solid black;
+  border-radius: 10px;
+  position: absolute;
+  height: 150px;
+  display: none;
+  align-items: end;
 }
 
-.extVenta ul li,
-.extProductos ul li,
-.extStock ul li,
-.extFacturas ul li {
-  color: black;
-  list-style: none;
-  text-align: left;
+.DisplayVenta {
+  top: 4rem;
+  left: 5rem;
 }
 
-.extVenta ul,
-.extProductos ul,
-.extStock ul,
-.extFacturas ul {
+.DisplayFactura {
+  top: 0rem;
+  left: 18.5rem;
+}
+
+.DisplayStock {
+  top: 3.4rem;
+  left: 33.5rem;
+}
+
+.DisplayProducto {
+  top: 3.4rem;
+  left: 46rem;
+}
+
+.DisplayVenta ul,
+.DisplayProducto ul,
+.DisplayStock ul,
+.DisplayFactura ul {
   padding: 0;
+}
+
+.DisplayVenta ul li,
+.DisplayProducto ul li,
+.DisplayStock ul li,
+.DisplayFactura ul li{
+  list-style: none;
+  padding: 0.6rem 1rem;
+}
+
+.DisplayVenta ul li:hover,
+.DisplayProducto ul li:hover,
+.DisplayStock ul li:hover,
+.DisplayFactura ul li:hover {
+  background-color: #FFD500;
+}
+
+.DisplayVenta ul li a,
+.DisplayProducto ul li a,
+.DisplayStock ul li a,
+.DisplayFactura ul li a{
+  color: black;
+  font-size: 1.5em;
+  padding: 0.5rem;
 }
