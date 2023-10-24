@@ -1,5 +1,7 @@
 import React from "react";
-import { BrowserRouter, Link } from 'react-router-dom';
+import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
+import NuevaVenta from "./NuevaVenta";
+import VentasRealizadas from "./VentasRealizadas";
 
 export default function nav(){
       
@@ -60,6 +62,13 @@ export default function nav(){
                     <li><Link to="/AgregarProducto">Agregar Producto</Link></li>
                 </ul>
             </span>
+
+            <Routes>
+                <Route path='/NuevaVenta' element={<NuevaVenta />} />
+                <Route path='/VentasRealizadas' element={<VentasRealizadas />} />
+            </Routes>
+            
+
         </BrowserRouter>
         
     )
