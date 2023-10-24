@@ -1,14 +1,12 @@
-import React, { useState }from "react"
+import React from "react";
+import { BrowserRouter, Link } from 'react-router-dom';
 
 export default function nav(){
       
     const venta = document.querySelector(".DisplayVenta");
 
-    function ClickA(item){
-        alert(`Click en ${item}`)
-    }
-
     function Click(name){
+
         const venta = document.querySelector(".DisplayVenta");
         const factura = document.querySelector(".DisplayFactura");
         const stock = document.querySelector(".DisplayStock");
@@ -26,7 +24,7 @@ export default function nav(){
     }
 
     return(
-        <>
+        <BrowserRouter>
             <nav className='nav'>
             <ul>
                 <li><a href="#" onClick={()=>{Click('venta')}}>VENTAS</a></li>
@@ -38,31 +36,31 @@ export default function nav(){
 
             <span className='DisplayVenta'>
                 <ul>
-                    <li><a href="#">Nueva Venta</a></li>
-                    <li><a href="#">Ventas Realizadas</a></li>
+                    <li><Link to="/NuevaVenta">Nueva Venta</Link></li>
+                    <li><Link to="/VentasRealizadas">Ventas Realizadas</Link></li>
                 </ul>
             </span>
 
             <span className='DisplayFactura'>
                 <ul>
-                    <li><a href="#">Facturas Realizadas</a></li>
+                    <li><Link to="/Facturas">Facturas Realizadas</Link></li>
                 </ul>
             </span>
 
             <span className='DisplayStock'>
                 <ul>
-                    <li><a href="#">Stock Disponible</a></li>
-                    <li><a href="#">Aumentar Stock</a></li>
+                    <li><Link to="/StockDisponible">Stock Disponible</Link></li>
+                    <li><Link to="/AumentarStock">Aumentar Stock</Link></li>
                 </ul>
             </span>
 
             <span className='DisplayProducto'>
                 <ul>
-                    <li><a href="#">Lista de Productos</a></li>
-                    <li><a href="#">Agregar Producto</a></li>
+                    <li><Link to="/ListaProductos">Lista de Productos</Link></li>
+                    <li><Link to="/AgregarProducto">Agregar Producto</Link></li>
                 </ul>
             </span>
-        </>
+        </BrowserRouter>
         
     )
 }

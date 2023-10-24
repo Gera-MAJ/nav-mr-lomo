@@ -69,6 +69,7 @@ body {
 .DisplayStockActive,
 .DisplayFacturaActive {
   display: flex;
+  
 }
 
 .DisplayFactura {
