@@ -1,0 +1,106 @@
+
+  .nav {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    border: 4px solid black;
+    border-radius: 10px;
+    margin: 0px 1em 0px 1em;
+    background-color: #FFD500;
+    margin: auto;
+    z-index: 1;
+  }
+  
+  .nav ul {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .nav ul li {
+    list-style: none;
+  }
+  
+  .nav ul li a {
+    margin: 0px 5rem 0px 5rem;
+    font-size: 1.4em;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+  
+  .logoLomo {
+    margin: auto;
+  }
+  
+  .DisplayVenta,
+  .DisplayProducto,
+  .DisplayStock,
+  .DisplayFactura {
+    background-color: white;
+    border-radius: 10px;
+    position: absolute;
+    height: 150px;
+    display: none;
+    align-items: end;
+  }
+  
+  .DisplayVenta {
+    top: 4rem;
+    left: 4rem;
+  }
+  
+  .DisplayVentaActive,
+  .DisplayProductoActive,
+  .DisplayStockActive,
+  .DisplayFacturaActive {
+    display: flex;
+    
+  }
+  
+  .DisplayFactura {
+    top: 0.56rem;
+    left: 20rem;
+  }
+  
+  .DisplayStock {
+    top: 4rem;
+    left: 37rem;
+  }
+  
+  .DisplayProducto {
+    top: 4rem;
+    left: 52.4rem;
+  }
+  
+  .DisplayVenta ul,
+  .DisplayProducto ul,
+  .DisplayStock ul,
+  .DisplayFactura ul {
+    padding: 0;
+  }
+  
+  .DisplayVenta ul li,
+  .DisplayProducto ul li,
+  .DisplayStock ul li,
+  .DisplayFactura ul li{
+    list-style: none;
+    padding: 0.6rem 1rem;
+  }
+  
+  .DisplayVenta ul li:hover,
+  .DisplayProducto ul li:hover,
+  .DisplayStock ul li:hover,
+  .DisplayFactura ul li:hover {
+    background-color: #FFD500;
+  }
+  
+  .DisplayVenta ul li a,
+  .DisplayProducto ul li a,
+  .DisplayStock ul li a,
+  .DisplayFactura ul li a{
+    color: black;
+    font-size: 1.5em;
+    padding: 0.5rem;
+  }
+  

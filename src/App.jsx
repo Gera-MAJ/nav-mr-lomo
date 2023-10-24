@@ -1,15 +1,15 @@
 
-import './App.css'
-import logomrlomo from '../img/logo-mr-lomo.png'
-import NavMrLomo from './components/Nav';
+import './App.css';
+import NavMrLomo from './components/NavPrincipal';
+import Home from './components/Home'
 
 function App() {
 
   return (
     <>
+      <Home /> 
       <NavMrLomo />
-      
-      <img className='logoLomo' src={logomrlomo} alt="logo"/>    
+         
     </>
   )
 }

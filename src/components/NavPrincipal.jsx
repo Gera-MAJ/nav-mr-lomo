@@ -2,10 +2,9 @@ import React from "react";
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
 import NuevaVenta from "./NuevaVenta";
 import VentasRealizadas from "./VentasRealizadas";
+import '../style/NavPStyle.css';
 
-export default function nav(){
-      
-    const venta = document.querySelector(".DisplayVenta");
+export default function Nav(){
 
     function Click(name){
 
@@ -13,6 +12,11 @@ export default function nav(){
         const factura = document.querySelector(".DisplayFactura");
         const stock = document.querySelector(".DisplayStock");
         const producto = document.querySelector(".DisplayProducto");
+
+        venta.classList.remove("DisplayVentaActive");
+        factura.classList.remove("DisplayFacturaActive");
+        stock.classList.remove("DisplayStockActive");
+        producto.classList.remove("DisplayProductoActive");
 
         if(name == "venta"){
             venta.classList.toggle("DisplayVentaActive")
